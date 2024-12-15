@@ -10,8 +10,8 @@ def get_blueprints():
     # Simulate URLs for two blueprints
     data = {
         "blueprint_data": {
-            "blueprint1": "https://www.google.com",
-            "blueprint2": "https://www.youtube.com"
+            "blueprint1": "https://www.pega.com/",
+            "blueprint2": "https://www.pega.com/"
         }
     }
     return jsonify(data)

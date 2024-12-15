@@ -14,7 +14,7 @@ function App() {
 
   const fetchScoreboard = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:5000/scoreboard");
+      const response = await axios.get("https://blueprint-evaluation-tool-1.onrender.com/scoreboard");
       setScoreboard(response.data);
     } catch (error) {
       console.error("Error fetching scoreboard:", error);
@@ -26,7 +26,7 @@ function App() {
     if (selectedIndustry) {
       setLoading(true);
       axios
-        .get("http://127.0.0.1:5000/get-blueprints", { industry: selectedIndustry })
+        .get("https://blueprint-evaluation-tool-1.onrender.com/get-blueprints", { industry: selectedIndustry })
         .then((response) => {
           setBlueprints(response.data.blueprint_data);
           setFormSubmitted(true);
@@ -40,7 +40,7 @@ function App() {
 
   const handleFeedbackSubmit = async (feedback) => {
     try {
-      await axios.post("http://127.0.0.1:5000/submit-feedback", { feedback });
+      await axios.post("https://blueprint-evaluation-tool-1.onrender.com//submit-feedback", { feedback });
       alert("Feedback submitted successfully!");
       setFeedbackSubmitted(true);
       fetchScoreboard(); // Fetch the scoreboard after feedback
