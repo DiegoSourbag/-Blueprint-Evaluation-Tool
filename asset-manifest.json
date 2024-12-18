@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/-Blueprint-Evaluation-Tool/static/css/main.579c02be.css",
+    "main.js": "/-Blueprint-Evaluation-Tool/static/js/main.f0505f11.js",
+    "index.html": "/-Blueprint-Evaluation-Tool/index.html",
+    "main.579c02be.css.map": "/-Blueprint-Evaluation-Tool/static/css/main.579c02be.css.map",
+    "main.f0505f11.js.map": "/-Blueprint-Evaluation-Tool/static/js/main.f0505f11.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.579c02be.css",
+    "static/js/main.f0505f11.js"
+  ]
+}
